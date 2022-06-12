@@ -4,6 +4,7 @@ using System.Collections;
 public class MoveScript : MonoBehaviour
 {
     //private float speed = 10f;
+    
     private bool going_right = false;
     float speed;
     float x;
@@ -36,6 +37,7 @@ public class MoveScript : MonoBehaviour
             if (transform.position.x < -5) // Too far left
             {
                 going_right = true; // Switch direction
+                
             }
         }
     }

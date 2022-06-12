@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+    int counter = 0;
     bool alive = true;
-    
+  
     public float speed = 5;
     [SerializeField] Rigidbody rb;
     
@@ -36,12 +36,20 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
+        
         alive = false;
         Invoke("Restart", 4);
     }
 
     void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+        
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
+            
+               
+            
+        
     }
 }

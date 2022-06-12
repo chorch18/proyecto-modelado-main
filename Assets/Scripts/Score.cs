@@ -12,13 +12,20 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        if (player.position.z <= 100)
+        if (player.position.z >= 0)
         {
-            scoreText.text = player.position.z.ToString("0");
+            if (player.position.z <= 100)
+            {
+                scoreText.text = "score: " + player.position.z.ToString("0");
+            }
+            else
+            {
+                scoreText.text = ("win");
+            }
         }
         else
         {
-            scoreText.text = ("win");
+            scoreText.text = "starting...";
         }
     }
      
