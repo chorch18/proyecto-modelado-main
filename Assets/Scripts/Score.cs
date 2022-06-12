@@ -12,6 +12,17 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = player.position.z.ToString("0");
+        if (player.position.z <= 100)
+        {
+            scoreText.text = player.position.z.ToString("0");
+        }
+        else
+        {
+            scoreText.text = ("win");
+        }
     }
+     
+            
+        
+    
 }
