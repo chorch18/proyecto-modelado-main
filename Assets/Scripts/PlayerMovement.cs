@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     public void Die()
     {
         alive = false;
-        Invoke("Restart", 2);
+        Invoke("Restart", 4);
     }
 
     void Restart()
