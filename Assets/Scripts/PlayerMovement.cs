@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    int counter = 0;
     bool alive = true;
   
     public float speed = 5;
